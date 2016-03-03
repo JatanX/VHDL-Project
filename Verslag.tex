@@ -1,0 +1,86 @@
+\documentclass[12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{afterpage}
+
+\lstdefinelanguage{VHDL}{
+	morekeywords={
+		library,use,all,entity,is,port,in,out,end,architecture,of,
+		begin,and, if, else
+	},
+	morecomment=[l]--
+}
+\lstset{
+	numbers=left,
+	breaklines=true,
+	tabsize=4,
+	literate={\ \ }{{\ }}1
+}
+
+
+\usepackage{xcolor}
+\colorlet{keyword}{blue!100!black!80}
+\colorlet{comment}{green!90!black!90}
+
+\lstdefinestyle{vhdl}{
+	language     = VHDL,
+	basicstyle   = \ttfamily,
+	keywordstyle = \color{keyword}\bfseries,
+	commentstyle = \color{comment}
+}
+
+\begin{document}
+	\begin{titlepage}
+		
+		\definecolor{landanimal}{RGB}{00, 66, 121}
+		\pagecolor{landanimal}\afterpage{\nopagecolor}
+		\center	
+		
+		\color{white}
+		\textsc{\LARGE InHolland}\\[1.5cm] % Name of your university/college
+		\textsc{\Large VHDL}\\[2.5cm] % Major heading such as course name
+		
+		
+		\huge \bfseries S88-n Protocol in VHDL \\[2.0cm] % Title of your document
+		
+		\emph{Authors:}\\
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				
+				Koen Groot \\ nummer
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\large Ruben Pera \\ 551198
+			\end{flushright}
+		\end{minipage}
+		\\[1cm]
+		\emph{Supervisor:} \\
+		\large Drs. Ing. A.H. Boode 
+	
+		
+	\end{titlepage}
+\input{./pages/samenvatting.tex}
+	\tableofcontents
+	\clearpage
+	
+\input{./pages/inleiding.tex}
+	\input{./pages/probleem_omschrijving.tex}
+	\input{./pages/specificaties.tex}
+	
+	%\chapter{Vereisten}
+	\input{./pages/analyse.tex}
+	%\chapter{Ontwerp}
+	%\chapter{Implementatie}
+	%\chapter{Testen}
+	%\chapter{Conclusie}
+	%\chapter{Bibliografie}
+	
+\input{./pages/code.tex}		
+\end{document}
