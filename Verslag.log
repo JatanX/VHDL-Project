@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  3 MAR 2016 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  4 MAR 2016 16:25
 entering extended mode
 **Verslag.tex
 (Verslag.tex
@@ -199,18 +199,18 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (Verslag.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
@@ -249,41 +249,120 @@ Hoofdstuk 1.
 
 ]
 Hoofdstuk 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
 ) (pages/specificaties.tex [4
 
 ]
 Hoofdstuk 3.
-) (pages/analyse.tex [5
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+)
+(pages/vereisten.tex [5
 
 ]
 Hoofdstuk 4.
-) (pages/code.tex [6
+) (pages/analyse.tex [6
 
 ]
 Hoofdstuk 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--16
+
+ []
+
+<./img/S88Bus.png, id=29, 499.11469pt x 329.73187pt>
+File: ./img/S88Bus.png Graphic file (type png)
+ <use ./img/S88Bus.png>
+Package pdftex.def Info: ./img/S88Bus.png used on input line 18.
+(pdftex.def)             Requested size: 401.50146pt x 265.25497pt.
+
+Overfull \hbox (29.12628pt too wide) in paragraph at lines 18--24
+[][]
+ []
+
+
+Overfull \hbox (210.70638pt too wide) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 @on-lineID, title = S88 TE-RUG-MEL-DERS, date = 04-03-2016, url
+ = http://users.telenet.be/RedDeBist/MBAAN/S88 
+ []
+
+[7
+
+] [8 <./img/S88Bus.png>]
+Overfull \hbox (6.65561pt too wide) in paragraph at lines 28--28
+[]\OT1/cmr/bx/n/17.28 Hoe werkt een XI-LINX Spar-tan 3E FPGA
+ []
+
+) (pages/code.tex [9
+
+]
+Hoofdstuk 6.
 (code/Code.vhd
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
- [7
+ [10
 
-] [8])) [9] (Verslag.aux) ) 
+] [11])) [12] (Verslag.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 20 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 5115 strings out of 493673
- 65497 string characters out of 3141531
- 194538 words of memory out of 3000000
- 8410 multiletter control sequences out of 15000+200000
- 10002 words of font info for 36 fonts, out of 3000000 for 9000
+ 5162 strings out of 493673
+ 66150 string characters out of 3141531
+ 195538 words of memory out of 3000000
+ 8440 multiletter control sequences out of 15000+200000
+ 13123 words of font info for 47 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 33i,6n,50p,332b,1647s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmtt12.pfb>
-Output written on Verslag.pdf (10 pages, 74875 bytes).
+ 33i,6n,50p,341b,1705s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb>
+Output written on Verslag.pdf (13 pages, 104576 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

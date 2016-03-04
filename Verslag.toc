@@ -2,5 +2,8 @@
 \contentsline {chapter}{\numberline {1}Inleiding}{3}
 \contentsline {chapter}{\numberline {2}Probleem Omschrijving}{4}
 \contentsline {chapter}{\numberline {3}Specificaties}{5}
-\contentsline {chapter}{\numberline {4}Analyse}{6}
-\contentsline {chapter}{\numberline {5}Apendix}{7}
+\contentsline {chapter}{\numberline {4}Vereisten}{6}
+\contentsline {chapter}{\numberline {5}Analyse}{7}
+\contentsline {section}{\numberline {5.1}Hoe werkt het s88 protocol}{7}
+\contentsline {section}{\numberline {5.2}Hoe werkt een XILINX Spartan 3E FPGA bord}{9}
+\contentsline {chapter}{\numberline {6}Apendix}{10}
