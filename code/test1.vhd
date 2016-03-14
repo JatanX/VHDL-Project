@@ -30,6 +30,7 @@ signal CustomClock : Bit := '0';
 				if(ClockCounter > 25000000) then
 					CustomClock <= CustomClock XOR '1';
 					ClockCounter := (others => '0');
+
 					--Hiermee wordt de CustomClock getoggled
 				end if;
 			end if;
@@ -37,7 +38,7 @@ end process;
 
 s88Protocol : process(CustomClock)
 	begin
-		if(rising_edge(CustomClock)) then
+		if(CustomClock = '1') then
 			LD0 <= '1';
 		end if;
 end process;
