@@ -5,31 +5,41 @@ use ieee.numeric_std.all;
 
 --library UNISIM;
 --use UNISIM.VComponents.all;
-entity s88V2 is
+entity s88 is
 	port
 	(
 		OnboardClock : in std_logic;
 --		LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, GPIO14, GPIO16, GPIO17 : out std_logic;
-		LED0 : out std_logic
+		LD0 : out std_logic
 	);
-end s88V2;
+end s88;
 
-architecture default of s88V2 is
-
+architecture s88Timing of s88 is
+signal CustomClock : Bit := '0';
 	begin
 
+		--Genereren van de CustomClock
 		timer : process(OnboardClock)
-variable counter : unsigned(20 downto 0) := (others => '0');
-variable booleam : BIT := '0';
+		--Variabelen
+		variable ClockCounter : unsigned(24 downto 0 ) := (others => '0');
+
+		--daadwerkelijk process
 		begin
 			if(rising_edge(OnboardClock)) then
-				booleam := '1';
-				if(booleam = '1') then
-					LED0 <= '1';
-				else
-					LED0 <= '0';
+				ClockCounter := ClockCounter + 1;
+				if(ClockCounter > 25000000) then
+					CustomClock <= CustomClock XOR '1';
+					ClockCounter := (others => '0');
+					--Hiermee wordt de CustomClock getoggled
 				end if;
 			end if;
-	end process;
+end process;
 
-end architecture default;
+s88Protocol : process(CustomClock)
+	begin
+		if(rising_edge(CustomClock)) then
+			LD0 <= '1';
+		end if;
+end process;
+
+end s88Timing;

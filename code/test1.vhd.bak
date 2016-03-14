@@ -28,7 +28,7 @@ variable booleam : BIT := '0';
 					LED0 <= '1';
 				else
 					LED0 <= '0';
-				else if;
+				end if;
 			end if;
 	end process;
 
