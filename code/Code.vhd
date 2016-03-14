@@ -12,12 +12,12 @@ entity s88V2 is
 --		LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, GPIO14, GPIO16, GPIO17 : out std_logic;
 
 
-		clock		: in std_logic;
-		data_input	: in std_logic;
-		load_output	: out std_logic := '0';
+		clock			: in std_logic;
+		data_input		: in std_logic;
+		load_output		: out std_logic := '0';
 		clock_output	: out std_logic := '0';
 		reset_output	: out std_logic := '0';	
-		data_output	: out std_logic := '0';
+		data_output		: out std_logic := '0';
 		test_output 	: out std_logic := '0'
 	);
 end s88V2;
@@ -26,7 +26,7 @@ end s88V2;
 architecture s88TimingV2 of s88V2 is
 signal CounterForTheClock 	: integer := 0;				-- gebruikt om de hoeveelheid klokslagen bij te houden
 signal CounterForTheTime 	: integer := 0;				-- 
-signal HertzToUse		: integer := 1;
+signal HertzToUse			: integer := 1;
 begin
 
 	increase_CounterForTheClock_on_clock : process(clock)

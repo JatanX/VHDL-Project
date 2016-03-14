@@ -5,6 +5,13 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{afterpage}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkbordercolor={0 0 0}, urlcolor=Blue, linkcolor=Black}
+\usepackage{amsmath} 
+\usepackage{siunitx} 
+\usepackage[sc]{mathpazo}
+
 
 
 \lstdefinelanguage{VHDL}{
@@ -36,7 +43,7 @@
 \begin{document}
 	\begin{titlepage}
 		
-		\definecolor{landanimal}{RGB}{00, 66, 121}
+		\definecolor{landanimal}{cmyk}{1,.60,0,.40}
 		\pagecolor{landanimal}\afterpage{\nopagecolor}
 		\center	
 		
@@ -52,7 +59,7 @@
 		\begin{minipage}{0.4\textwidth}
 			\begin{flushleft} \large
 				
-				Koen Groot \\ nummer
+				Koen Groot \\ 549543
 			\end{flushleft}
 		\end{minipage}
 		~
@@ -75,7 +82,8 @@
 	\input{./pages/vereisten.tex}
 
 	\input{./pages/analyse.tex}
-	%\chapter{Ontwerp}
+	\input{./pages/ontwerp.tex}
+	\input{./pages/implementatie.tex}
 	%\chapter{Implementatie}
 	%\chapter{Testen}
 	%\chapter{Conclusie}

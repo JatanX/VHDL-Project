@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{import}
+\usepackage{epsfig}
+\usepackage{footnote}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{mathabx}
+\usepackage{multicol}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{needspace}
+\usepackage{pigpen}
+\usepackage{titlesec,blindtext,color}
+\usepackage{enumitem}
+\usepackage{epsfig}
+\usepackage{makecell}
+\usepackage{mathabx}
+\usepackage{tablefootnote}
+\usepackage[tc]{titlepic}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{newclude}
+\usepackage{textcomp}
+\definecolor{title}{RGB}{180,0,0}
+\definecolor{other}{RGB}{171,0,255}
+\definecolor{name}{RGB}{255,0,0}
+\definecolor{phd}{RGB}{0,0,240}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{lipsum}% Used for dummy text.
+\usepackage{glossaries}
+\setacronymstyle{long-short}
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+\definecolor{namecolor}{cmyk}{1,.50,0,.10} 
+
+\include{Glossaries}
+%\newglossaryentry{FPGA}{FPGAs-{sample}, Field Programmable Gate Array}
+%-----------------------------------------------------------------
+\begin{document}
+% ----------------------------------------------------------------
+\let\cleardoublepage\clearpage
+\begin{titlepage}
+\newgeometry{left=7.5cm} %defines the geometry for the titlepage
+\pagecolor{titlepagecolor}
+\noindent
+%\includegraphics[width=2cm]{"images/inholland_logo"}\\[-1em]
+\color{white}
+\makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}
+\par
+\noindent
+\textbf{\textsf{InHolland University of Applied Science}}\\ %\textcolor{namecolor}{\textsf{}}\\
+\noindent
+\textbf{\textsf{Bachelor of Computer Engineering}} \\%\textcolor{namecolor}{\textsf{of Information Technology}}\\
+
+\noindent
+\textbf{\textsf{Assignment Description of\\ the Design and Implementation of \\ an S88 Feedback Module\\ Testing Device\\ on a XILINX Spartan FPGA}} \textcolor{namecolor}{\textsf{}}
+\vfill
+\noindent
+\textsf{Author}\\
+\vskip\baselineskip
+\noindent
+{\huge \textsf{Drs. Ing. A.H. Boode}}
+\vskip\baselineskip
+\noindent
+\textsf{November 2014}
+\end{titlepage}
+\restoregeometry % restores the geometry
+\nopagecolor% Use this to restore the color pages to white
+% ----------------------------------------------------------------
+\input{Summary}
+\tableofcontents
+\input{Introduction}
+\input{Specification}
+\input{Literature}
+\input{Documentation}
+\printnoidxglossaries
+\bibliographystyle{plain}
+\bibliography{mybibliography}
+\end{document}
+

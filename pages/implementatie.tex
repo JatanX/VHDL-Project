@@ -1,0 +1,53 @@
+\chapter{Implementatie}
+
+Voordat er begonnen kan worden wordt er eerst een korte uitleg gegeven over de structuur, syntax en code van de hardware beschrijving taal VHDL.
+
+\section{VHDL uitgelegd}
+
+VHDL begint met een declaratie van alle gebruikte libraries, dit zijn bibliotheken waarin staat hoe de VHDL code met het XILINX bord om moet gaan, bijvoorbeeld waar de aansluitingen zitten.
+
+Na het declareren van de libraries moeten alle IO poorten van het systeem gedeclareerd worden.
+
+Na het declareren van de libraries en de IO poorten kan er nog gebruikt gemaakt worden van interne variabelen, signals genoemt. Waar de IO poorten alleen binair 0 of 1 kunnen zijn kunnen signals meer informatie bevatten, het is mogelijk om integers, bools en dergelijke te gebruiken.
+
+Nadat alles gedeclareerd is kan er begonnen worden met de daadwerkelijke functies.
+
+\clearpage
+\section{Declaratie VHDL}
+
+De volgende libraries moeten gedeclareerd worden om de VHDL te kunnen communiceren met het XILINX bord.
+
+\begin{itemize}
+	\item $ieee;$
+	\item $ieee.std_logic_1164.all;$
+	\item $IEEE.std_logic_unsigned.all;$
+	\item $ieee.numeric_std.all;$
+\end{itemize}
+\section{Initialisatie van het schuifregister}
+
+Hieronder wordt een lijst gegeven van alle $\boldsymbol{uitgangen}$ die gebruikt gaan worden:
+\begin{itemize}
+	\item LED0 t/m  LED7.\\
+	Deze LEDs worden gebruikt om de toestand van de uit Data-Out ingelezen bits te weer te geven, ofwel 1(Led aan) ofwel 0(led uit).
+	\item GPIO16\\
+	Dit is de IO poort waarop Load aangesloten wordt.
+	\item GPIO17\\
+	Dit is de IO poort waarop Reset aangesloten wordt.
+	\item GPIO14\\
+	Dit is de IO poort waarop Clock aangesloten wordt.
+
+\end{itemize}
+
+Hieronder wordt een lijst gegeven van alle $\boldsymbol{Ingangen}$ die gebruikt gaan worden:
+\begin{itemize}
+		\item GPIO12\\
+		Dit is de IO poort waarop Data-Out aangesloten wordt.
+		\item SW0\\
+		Dit is de IO poort die aangeeft of de upper of lower byte gelezen wordt.
+		\item Onboardclock\\
+		Dit is de eerdergenoemde interne clock, deze is geklokt op $\SI{50}{\mega\hertz} $. 
+\end{itemize}
+
+
+\section{Uitlezen van het Schuifregister}
+
