@@ -1,7 +1,7 @@
 Library ieee;
 use ieee.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
 use ieee.numeric_std.all;
+
 
 --library UNISIM;
 --use UNISIM.VComponents.all;
@@ -16,31 +16,48 @@ end s88;
 
 architecture s88Timing of s88 is
 signal CustomClock : Bit := '0';
+
+
 	begin
 
 		--Genereren van de CustomClock
 		timer : process(OnboardClock)
 		--Variabelen
 		variable ClockCounter : unsigned(24 downto 0 ) := (others => '0');
-
+		variable TijdseenheidCounter : integer := 0;
 		--daadwerkelijk process
 		begin
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
-				if(ClockCounter > 25000000) then
-					CustomClock <= CustomClock XOR '1';
-					ClockCounter := (others => '0');
-
+				if(ClockCounter > 50000000) then
+					TijdseenheidCounter := TijdseenheidCounter + 1;
+					case TijdseenheidCounter is
+						
+						when 0 =>
+							LD0 <= '0';
+						when 1 =>
+							LD0 <= '1';
+						when others =>
+						--doe niks
+					end case;
 					--Hiermee wordt de CustomClock getoggled
 				end if;
 			end if;
 end process;
-
-s88Protocol : process(CustomClock)
-	begin
-		if(CustomClock = '1') then
-			LD0 <= '1';
-		end if;
-end process;
+--
+-- s88Protocol : process(OnboardClock)
+-- 	begin
+-- 		if(rising_edge(OnboardClock)) then
+-- 			case TijdseenheidCounter is
+-- 				when 0 =>
+-- 					LD0 <= '0';
+-- 				when 1 =>
+-- 				LD0 <= '1';
+--
+-- 					when others =>
+-- 						--doe niks
+-- 				end case;
+-- 		end if;
+-- end process;
 
 end s88Timing;
