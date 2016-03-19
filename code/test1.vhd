@@ -27,7 +27,28 @@ architecture s88Timing of s88 is
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
 				TimingCounter <= ClockCounter;
-				if(TimingCounter(20) = '1') then
+				if(
+				TimingCounter(0) = '0' and
+				TimingCounter(1) = '0' and
+				TimingCounter(2) = '0' and
+				TimingCounter(3) = '0' and
+				TimingCounter(4) = '0' and
+				TimingCounter(5) = '0' and
+				TimingCounter(6) = '0' and
+				TimingCounter(7) = '0' and
+				TimingCounter(8) = '0' and
+				TimingCounter(9) = '0' and
+				TimingCounter(10) = '0' and
+				TimingCounter(11) = '0' and
+				TimingCounter(12) = '0' and
+				TimingCounter(13) = '0' and
+				TimingCounter(14) = '0' and
+				TimingCounter(15) = '0' and
+				TimingCounter(16) = '0' and
+				TimingCounter(17) = '0' and
+				TimingCounter(18) = '0' and
+				TimingCounter(19) = '0' and
+				TimingCounter(20) = '1'			) then
 					TimingCounter <= "000000000000000000000";
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
