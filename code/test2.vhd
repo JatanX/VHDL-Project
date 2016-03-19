@@ -45,7 +45,7 @@ architecture s88Timing of s88 is
                                                 --niks
 
 					end case;
-
+                                        --Leds
                                         case TijdseenheidCounter is
 when 2 =>
  Clock <= '1';
