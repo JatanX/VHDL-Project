@@ -66,8 +66,10 @@ architecture s88Timing of s88 is
                                                 LED0 <= DataOut;
                                                 when 4 =>
                                                 --niks
-                                                when 5 =>                                Reset <= '1';
+                                                when 5 =>
+                                                Reset <= '1';
                                                 when 6 =>
+                                                Reset <= '0';
                                                 Load <= '1';
                                                 when 7 =>
                                                 --niks
