@@ -59,28 +59,55 @@ architecture s88Timing of s88 is
                                                 -- niks
 						when 1 =>
                                                 Load <= '1';
-						when 2 =>
-						clock <= '1';
+                                                when 2 =>
+                                                Clock <= '1';
                                                 when 3 =>
-                                                clock <= '0';
                                                 LED0 <= DataOut;
-                                                when 4 =>
-                                                --niks
+                                                Clock <= '0';
                                                 when 5 =>
                                                 Reset <= '1';
                                                 when 6 =>
                                                 Reset <= '0';
                                                 Load <= '1';
-                                                when 7 =>
-                                                --niks
-                                                when 8 =>
-                                                clock <= '1';
-                                                when 9 =>
-                                                clock <= '0';
-                                                LED2 <= DataOut;
 
+                                                when 8 =>
+                                                Clock <= '1';
+                                                when 9 =>
+                                                LED1 <= DataOut;
+                                                Clock <= '0';
+                                                when 14 =>
+                                                Clock <= '1';
+                                                when 15 =>
+                                                LED2 <= DataOut;
+                                                Clock <= '0';
+                                                when 20 =>
+                                                Clock <= '1';
+                                                when 21 =>
+                                                LED3 <= DataOut;
+                                                Clock <= '0';
+                                                when 26 =>
+                                                Clock <= '1';
+                                                when 27 =>
+                                                LED4 <= DataOut;
+                                                Clock <= '0';
+                                                when 32 =>
+                                                Clock <= '1';
+                                                when 33 =>
+                                                LED5 <= DataOut;
+                                                Clock <= '0';
+                                                when 38 =>
+                                                Clock <= '1';
+                                                when 39 =>
+                                                LED6 <= DataOut;
+                                                Clock <= '0';
+                                                when 44 =>
+                                                Clock <= '1';
+                                                when 45 =>
+                                                LED7 <= DataOut;
+                                                Clock <= '0';
 
 						when others =>
+                                                --niks
 
 					end case;
 					--Hiermee wordt de CustomClock getoggLED
