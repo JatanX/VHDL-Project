@@ -55,17 +55,27 @@ architecture s88Timing of s88 is
 					TimingCounter <= "00000000000000000000000000";
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
-
-						when 0 =>
-                                                        Load <= '1';
+                                                when 0 =>
+                                                -- niks
 						when 1 =>
-							clock <= '1';
-                                                when 2 =>
+                                                Load <= '1';
+						when 2 =>
+						clock <= '1';
+                                                when 3 =>
                                                 clock <= '0';
                                                 LED0 <= DataOut;
-                                                when 3 =>
-                                                when 4 =>                                             Reset <= '1'';
-                                                
+                                                when 4 =>
+                                                --niks
+                                                when 5 =>                                Reset <= '1';
+                                                when 6 =>
+                                                Load <= '1';
+                                                when 7 =>
+                                                --niks
+                                                when 8 =>
+                                                clock <= '1';
+                                                when 9 =>
+                                                clock <= '0';
+                                                LED2 <= DataOut;
 
 
 						when others =>
