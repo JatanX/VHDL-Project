@@ -29,7 +29,7 @@ signal CustomClock : Bit := '0';
 		begin
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
-
+				if(ClockCounter(5) = '1') then
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
 
@@ -38,10 +38,10 @@ signal CustomClock : Bit := '0';
 						when 1 =>
 							LD0 <= '1';
 						when others =>
-						LD0 <= '0';
+
 					end case;
 					--Hiermee wordt de CustomClock getoggled
-
+				end if;
 			end if;
 end process;
 --
