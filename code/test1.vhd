@@ -28,6 +28,7 @@ architecture s88Timing of s88 is
 				ClockCounter := ClockCounter + 1;
 				TimingCounter <= ClockCounter;
 				if(TimingCounter(20) = '1') then
+					TimingCounter <= "000000000000000000000";
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
 
