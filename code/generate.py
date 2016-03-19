@@ -1,4 +1,6 @@
 i = 0;
-while(i < 20):
-    print("TimingCounter(",i, ") = '0' and")
+pattern = 25000000;
+while(i < 25):
+    print("TimingCounter(",i, ") = '",pattern & 1, "' and")
+    pattern = pattern >> 1;
     i += 1;
