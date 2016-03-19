@@ -1,6 +1,6 @@
-Library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+library IEEE;
+use IEEE . STD_LOGIC_1164 .ALL;
+use IEEE . NUMERIC_STD .ALL;
 
 
 --library UNISIM;
@@ -29,19 +29,19 @@ signal CustomClock : Bit := '0';
 		begin
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
-				if(ClockCounter > 50000000) then
+
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
-						
+
 						when 0 =>
 							LD0 <= '0';
 						when 1 =>
 							LD0 <= '1';
 						when others =>
-						--doe niks
+						LD0 <= '0';
 					end case;
 					--Hiermee wordt de CustomClock getoggled
-				end if;
+
 			end if;
 end process;
 --
