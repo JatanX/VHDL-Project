@@ -15,11 +15,7 @@ entity s88 is
 end s88;
 
 architecture s88Timing of s88 is
-signal CustomClock : Bit := '0';
-
-
 	begin
-
 		--Genereren van de CustomClock
 		timer : process(OnboardClock)
 		--Variabelen
