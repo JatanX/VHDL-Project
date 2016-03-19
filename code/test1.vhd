@@ -15,17 +15,19 @@ entity s88 is
 end s88;
 
 architecture s88Timing of s88 is
+	signal TimingCounter : unsigned (20 downto 0) := ( others => '0');
 	begin
 		--Genereren van de CustomClock
 		timer : process(OnboardClock)
 		--Variabelen
-		variable ClockCounter : unsigned(24 downto 0 ) := (others => '0');
+		variable ClockCounter : unsigned (20 downto 0) := "100000000000000000000";
 		variable TijdseenheidCounter : integer := 0;
 		--daadwerkelijk process
 		begin
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
-				if(ClockCounter(5) = '1') then
+				TimingCounter <= ClockCounter;
+				if(TimingCounter(5) = '1') then
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 					case TijdseenheidCounter is
 
