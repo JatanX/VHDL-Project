@@ -36,8 +36,5 @@ Door een puls op RESET te geven worden de buffers gereset en zijn deze weer gere
 	
 \subsection{Hoe wordt het XILINX Spartan 3E FPGA bord gebruikt?}
 %http://www.xilinx.com/support/documentation/data_sheets/ds312.pdf
-
-\newpage
-\subsection{Hoe kan de hardware beschrijving taal VHDL gebruikt worden op het XILINX Spartan 3E FPGA bord?}
-
-%Stuke van Koen
+Het FPGA bord krijgt instructies in de Hardware programeer taal VHDL om via het S88 protocol te controleren of er iets gebeurd op het RM88 bord. Dit houd in dat het FPGA bord een 'Clock' nodig heeft om te reageren op inkomende 'data' van het RM88 bord.\\
+Dit wordt tot stand gebracht door op het FPGA bord via GPIO poorten verbinding te leggen naar het eerder vernoemde RM88 bord. To be continued

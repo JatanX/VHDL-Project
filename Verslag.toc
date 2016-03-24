@@ -12,16 +12,15 @@
 \contentsline {section}{\numberline {5.1}deelvragen}{9}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Hoe werkt het s88 protocol?}{9}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Hoe wordt het XILINX Spartan 3E FPGA bord gebruikt?}{11}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Hoe kan de hardware beschrijving taal VHDL gebruikt worden op het XILINX Spartan 3E FPGA bord?}{12}{subsection.5.1.3}
-\contentsline {chapter}{\numberline {6}Ontwerp}{13}{chapter.6}
-\contentsline {section}{\numberline {6.1}Textueel ontwerp van het programma}{13}{section.6.1}
-\contentsline {section}{\numberline {6.2}Custom Clockrate genereren}{14}{section.6.2}
-\contentsline {section}{\numberline {6.3}De S88 Signalen}{15}{section.6.3}
-\contentsline {section}{\numberline {6.4}Initialisatie van het schuifregister}{15}{section.6.4}
-\contentsline {section}{\numberline {6.5}Uitlezen van het Schuifregister}{18}{section.6.5}
-\contentsline {chapter}{\numberline {7}Implementatie}{21}{chapter.7}
-\contentsline {section}{\numberline {7.1}VHDL uitgelegd}{21}{section.7.1}
-\contentsline {section}{\numberline {7.2}Declaratie VHDL}{22}{section.7.2}
-\contentsline {section}{\numberline {7.3}Initialisatie van het schuifregister}{22}{section.7.3}
-\contentsline {section}{\numberline {7.4}Uitlezen van het Schuifregister}{23}{section.7.4}
-\contentsline {chapter}{\numberline {8}Apendix}{24}{chapter.8}
+\contentsline {chapter}{\numberline {6}Ontwerp}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Textueel ontwerp van het programma}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}Custom Clockrate genereren}{13}{section.6.2}
+\contentsline {section}{\numberline {6.3}De S88 Signalen}{14}{section.6.3}
+\contentsline {section}{\numberline {6.4}Initialisatie van het schuifregister}{14}{section.6.4}
+\contentsline {section}{\numberline {6.5}Uitlezen van het Schuifregister}{17}{section.6.5}
+\contentsline {chapter}{\numberline {7}Implementatie}{20}{chapter.7}
+\contentsline {section}{\numberline {7.1}VHDL uitgelegd}{20}{section.7.1}
+\contentsline {section}{\numberline {7.2}Declaratie VHDL}{21}{section.7.2}
+\contentsline {section}{\numberline {7.3}Initialisatie van het schuifregister}{21}{section.7.3}
+\contentsline {section}{\numberline {7.4}Uitlezen van het Schuifregister}{22}{section.7.4}
+\contentsline {chapter}{\numberline {8}Apendix}{23}{chapter.8}

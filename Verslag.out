@@ -11,16 +11,15 @@
 \BOOKMARK [1][-]{section.5.1}{deelvragen}{chapter.5}% 11
 \BOOKMARK [2][-]{subsection.5.1.1}{Hoe werkt het s88 protocol?}{section.5.1}% 12
 \BOOKMARK [2][-]{subsection.5.1.2}{Hoe wordt het XILINX Spartan 3E FPGA bord gebruikt?}{section.5.1}% 13
-\BOOKMARK [2][-]{subsection.5.1.3}{Hoe kan de hardware beschrijving taal VHDL gebruikt worden op het XILINX Spartan 3E FPGA bord?}{section.5.1}% 14
-\BOOKMARK [0][-]{chapter.6}{Ontwerp}{}% 15
-\BOOKMARK [1][-]{section.6.1}{Textueel ontwerp van het programma}{chapter.6}% 16
-\BOOKMARK [1][-]{section.6.2}{Custom Clockrate genereren}{chapter.6}% 17
-\BOOKMARK [1][-]{section.6.3}{De S88 Signalen}{chapter.6}% 18
-\BOOKMARK [1][-]{section.6.4}{Initialisatie van het schuifregister}{chapter.6}% 19
-\BOOKMARK [1][-]{section.6.5}{Uitlezen van het Schuifregister}{chapter.6}% 20
-\BOOKMARK [0][-]{chapter.7}{Implementatie}{}% 21
-\BOOKMARK [1][-]{section.7.1}{VHDL uitgelegd}{chapter.7}% 22
-\BOOKMARK [1][-]{section.7.2}{Declaratie VHDL}{chapter.7}% 23
-\BOOKMARK [1][-]{section.7.3}{Initialisatie van het schuifregister}{chapter.7}% 24
-\BOOKMARK [1][-]{section.7.4}{Uitlezen van het Schuifregister}{chapter.7}% 25
-\BOOKMARK [0][-]{chapter.8}{Apendix}{}% 26
+\BOOKMARK [0][-]{chapter.6}{Ontwerp}{}% 14
+\BOOKMARK [1][-]{section.6.1}{Textueel ontwerp van het programma}{chapter.6}% 15
+\BOOKMARK [1][-]{section.6.2}{Custom Clockrate genereren}{chapter.6}% 16
+\BOOKMARK [1][-]{section.6.3}{De S88 Signalen}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.4}{Initialisatie van het schuifregister}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.5}{Uitlezen van het Schuifregister}{chapter.6}% 19
+\BOOKMARK [0][-]{chapter.7}{Implementatie}{}% 20
+\BOOKMARK [1][-]{section.7.1}{VHDL uitgelegd}{chapter.7}% 21
+\BOOKMARK [1][-]{section.7.2}{Declaratie VHDL}{chapter.7}% 22
+\BOOKMARK [1][-]{section.7.3}{Initialisatie van het schuifregister}{chapter.7}% 23
+\BOOKMARK [1][-]{section.7.4}{Uitlezen van het Schuifregister}{chapter.7}% 24
+\BOOKMARK [0][-]{chapter.8}{Apendix}{}% 25
