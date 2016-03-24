@@ -33,23 +33,9 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
 
 					TimingCounter <= "0000000000000000000000000";
 					TijdseenheidCounter := TijdseenheidCounter + 1;
-		case TijdseenheidCounter is
-			when "00000001" =>
-			Load <= '1';
-			when "00000100" =>
-			Reset <= '1';
-			when "00000101" =>
-			Reset <= '0';
-			when "00000111" =>
-			Load <= '0';
-			when others =>
-			-- niks
-		end case;
-
-
-
-
-         case TijdseenheidCounter is
+	     case TijdseenheidCounter is
+			 when "00000001" =>
+ 			Load <= '1';
 			 when "00000010" =>
 			 Clock <= '1';
 			 when "00000011" =>
@@ -57,6 +43,12 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
 			 if(HighBit = '0') then
 			 LED0 <= DataOut;
 			 end if;
+			 when "00000100" =>
+ 			Reset <= '1';
+			when "00000101" =>
+			Reset <= '0';
+			when "00000111" =>
+			Load <= '0';
 			 when "00001000" =>
 			 Clock <= '1';
 			 when "00001001" =>
