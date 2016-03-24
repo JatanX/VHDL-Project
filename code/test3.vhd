@@ -10,7 +10,7 @@ entity s88 is
 	port
 	(
 		OnboardClock, HighBit, DataOut : in std_logic;
-		LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, Clock, Load : out std_logic
+		LED0, LED1, LED2, LED3, LED4, LED5, LED6, LED7, Clock, Load, Reset : out std_logic
 	);
 end s88;
 
