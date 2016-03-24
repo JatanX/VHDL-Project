@@ -31,21 +31,118 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
 					TimingCounter <= "0000000000000000000000000";
 					TijdseenheidCounter := TijdseenheidCounter + 1;
          case TijdseenheidCounter is
-           when 0 =>
-          LED0 <= '1';
-          when 1 =>
-          LED1 <= '1';
-          when 2 =>
-          LED2 <= '1';
-          when 3 =>
-          LED3 <= '1';
-
-        when others =>
-		LED1 <= '0';
-		LED2 <= '0';
-		LED3 <= '0';
-		LED0 <= '0';
-		TijdseenheidCounter := 0;
+			 when "00000010" =>
+			 Clock <= '1';
+			 when "00000011" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED0 <= DataOut;
+			 end if;
+			 when "00001000" =>
+			 Clock <= '1';
+			 when "00001001" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED1 <= DataOut;
+			 end if;
+			 when "00001110" =>
+			 Clock <= '1';
+			 when "00001111" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED2 <= DataOut;
+			 end if;
+			 when "00010100" =>
+			 Clock <= '1';
+			 when "00010101" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED3 <= DataOut;
+			 end if;
+			 when "00011010" =>
+			 Clock <= '1';
+			 when "00011011" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED4 <= DataOut;
+			 end if;
+			 when "00100000" =>
+			 Clock <= '1';
+			 when "00100001" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED5 <= DataOut;
+			 end if;
+			 when "00100110" =>
+			 Clock <= '1';
+			 when "00100111" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED6 <= DataOut;
+			 end if;
+			 when "00101100" =>
+			 Clock <= '1';
+			 when "00101101" =>
+			 Clock <= '0';
+			 if(HighBit = '0') then
+			 LED7 <= DataOut;
+			 end if;
+			 when "00110010" =>
+			 Clock <= '1';
+			 when "00110011" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED0 <= DataOut;
+			 end if;
+			 when "00111000" =>
+			 Clock <= '1';
+			 when "00111001" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED1 <= DataOut;
+			 end if;
+			 when "00111110" =>
+			 Clock <= '1';
+			 when "00111111" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED2 <= DataOut;
+			 end if;
+			 when "01000100" =>
+			 Clock <= '1';
+			 when "01000101" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED3 <= DataOut;
+			 end if;
+			 when "01001010" =>
+			 Clock <= '1';
+			 when "01001011" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED4 <= DataOut;
+			 end if;
+			 when "01010000" =>
+			 Clock <= '1';
+			 when "01010001" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED5 <= DataOut;
+			 end if;
+			 when "01010110" =>
+			 Clock <= '1';
+			 when "01010111" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED6 <= DataOut;
+			 end if;
+			 when "01011100" =>
+			 Clock <= '1';
+			 when "01011101" =>
+			 Clock <= '0';
+			 if(HighBit = '1') then
+			 LED7 <= DataOut;
+			 end if;
         --niks
       end case;
 

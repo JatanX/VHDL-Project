@@ -1,11 +1,19 @@
+def bitnumer(usingnumber):
+    bitcount = 7
+    print('when "', end="")
+    while(bitcount >= 0):
+        print((usingnumber>>bitcount) & 1, end='')
+        bitcount -= 1
+    print('" =>', end="\n")
+
 i = 0;
 case = 2
 ifcounter = 0;
 while(i < 8):
-    print("when", case, "=>")
+    bitnumer(case)
     print("Clock <= '1';")
     case += 1
-    print("when", case, "=>")
+    bitnumer(case)
     print("Clock <= '0';")
     print("if(HighBit = '", ifcounter,"') then",sep='')
     print("LED", i, " <= DataOut;",sep='')
