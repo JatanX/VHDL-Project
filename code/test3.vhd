@@ -42,6 +42,10 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
 
         when others =>
 		LED1 <= '0';
+		LED2 <= '0';
+		LED3 <= '0';
+		LED0 <= '0';
+		TijdseenheidCounter := 0;
         --niks
       end case;
 
