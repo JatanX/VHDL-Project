@@ -39,7 +39,9 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
           LED2 <= '1';
           when 3 =>
           LED3 <= '1';
+
         when others =>
+		LED1 <= '0';
         --niks
       end case;
 

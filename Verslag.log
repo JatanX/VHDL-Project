@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.24)  24 MAR 2016 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.24)  24 MAR 2016 12:11
 entering extended mode
 **./Verslag.tex
 (Verslag.tex
@@ -1292,15 +1292,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (Verslag.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package rerunfilecheck Info: File `Verslag.out' has not changed.
+(rerunfilecheck)             Checksum: 596939919B336DB1312B685F665A34A8;1586.
 
-
-Package rerunfilecheck Warning: File `Verslag.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Verslag.out':
-(rerunfilecheck)             Before: 0C92BE2CCD9652DC63353CECF10C404B;1587
-(rerunfilecheck)             After:  596939919B336DB1312B685F665A34A8;1586.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1322,7 +1316,7 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x86)
 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on Verslag.pdf (29 pages, 208434 bytes).
+Output written on Verslag.pdf (29 pages, 208432 bytes).
 PDF statistics:
  524 PDF objects out of 1000 (max. 8388607)
  237 named destinations out of 1000 (max. 500000)
