@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  22 MAR 2016 13:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.24)  24 MAR 2016 11:56
 entering extended mode
-**Verslag.tex
+**./Verslag.tex
 (Verslag.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
@@ -42,7 +42,7 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@temptokena=\toks18
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2015/08/03 3.9m The Babel package
+Package: babel 2016/01/08 3.9n The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
@@ -54,7 +54,7 @@ File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 Language: dutch 2005/03/30 v3.8i Dutch support from the babel system
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2015/08/03 3.9m Babel common definitions
+File: babel.def 2016/01/08 3.9n Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 )
@@ -625,6 +625,8 @@ Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS)
 \symupright=\mathgroup4
 )
 (Verslag.aux)
+\openout1 = `Verslag.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
@@ -677,6 +679,8 @@ LaTeX Info: Redefining \nameref on input line 43.
 
 (Verslag.out) (Verslag.out)
 \@outlinefile=\write3
+\openout3 = `Verslag.out'.
+
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\tran
 slator-basic-dictionary\translator-basic-dictionary-English.dict"
@@ -728,7 +732,7 @@ Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 74.
  [1
 
-{C:/Users/ruben/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Ruben/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (pages/samenvatting.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
@@ -763,6 +767,8 @@ Package babel Info: Redefining dutch shorthand "~
 
 ])
 \tf@toc=\write4
+\openout4 = `Verslag.toc'.
+
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining dutch shorthand "~
@@ -1286,22 +1292,28 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (Verslag.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
-Package rerunfilecheck Info: File `Verslag.out' has not changed.
-(rerunfilecheck)             Checksum: 596939919B336DB1312B685F665A34A8;1586.
 
+
+Package rerunfilecheck Warning: File `Verslag.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Verslag.out':
+(rerunfilecheck)             Before: 0C92BE2CCD9652DC63353CECF10C404B;1587
+(rerunfilecheck)             After:  596939919B336DB1312B685F665A34A8;1586.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 18729 strings out of 493673
- 342501 string characters out of 3141531
- 512563 words of memory out of 3000000
- 21616 multiletter control sequences out of 15000+200000
+ 18729 strings out of 493634
+ 342496 string characters out of 3141314
+ 512676 words of memory out of 3000000
+ 21653 multiletter control sequences out of 15000+200000
  44853 words of font info for 116 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 39i,7n,50p,10383b,2262s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,7n,50p,10385b,2262s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Fi
@@ -1310,7 +1322,7 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x86)
 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/palatino/uplri8a.pfb>
-Output written on Verslag.pdf (29 pages, 208280 bytes).
+Output written on Verslag.pdf (29 pages, 208434 bytes).
 PDF statistics:
  524 PDF objects out of 1000 (max. 8388607)
  237 named destinations out of 1000 (max. 500000)

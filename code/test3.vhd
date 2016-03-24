@@ -8,8 +8,8 @@ use IEEE . NUMERIC_STD .ALL;
 entity s88 is
 	port
 	(
-		OnboardClock, DataOut, HighBit : in std_logic;
-		LED0 , LED1 , LED2 , LED3 , LED4 , LED5 , LED6 , LED7 , Load, Reset, Clock : out std_logic
+		OnboardClock : in std_logic;
+		LED0 : out std_logic
 	);
 end s88;
 
