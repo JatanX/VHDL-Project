@@ -1,0 +1,30 @@
+\ifglsentryexists{VHDL}{}%
+{%
+\gls@defglossaryentry{VHDL}%
+{%
+name={VHDL},%
+sort={VHDL},%
+type={main},%
+first={VHDL},%
+firstplural={VHDLs},%
+text={VHDL},%
+plural={VHDLs},%
+description={is een VHSIC (Very High Speed Integrated Circuit) Hardware Description Language.},%
+descriptionplural={is een VHSIC (Very High Speed Integrated Circuit) Hardware Description Language.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
