@@ -2,7 +2,7 @@
 
 Voordat er begonnen kan worden wordt er eerst een korte uitleg gegeven over de structuur, syntax en code van de hardware beschrijving taal VHDL.
 
-\section{VHDL uitgelegd}
+\section{Hoe wordt VHDL gebruikt}
 
 VHDL begint met een declaratie van alle gebruikte libraries, dit zijn bibliotheken waarin staat hoe de VHDL code met het XILINX bord om moet gaan, bijvoorbeeld waar de aansluitingen zitten.
 
@@ -18,10 +18,10 @@ Nadat alles gedeclareerd is kan er begonnen worden met de daadwerkelijke functie
 De volgende libraries moeten gedeclareerd worden om de VHDL te kunnen communiceren met het XILINX bord.
 
 \begin{itemize}
-	\item $ieee;$
-	\item $ieee.std_logic_1164.all;$
-	\item $IEEE.std_logic_unsigned.all;$
-	\item $ieee.numeric_std.all;$
+	\item ieee;
+	\item ieee.std logic 1164.all;
+	\item ieee.std logic unsigned.all;
+	\item ieee.numeric std.all;
 \end{itemize}
 \section{Initialisatie van het schuifregister}
 
@@ -37,7 +37,8 @@ Hieronder wordt een lijst gegeven van alle $\boldsymbol{uitgangen}$ die gebruikt
 	Dit is de IO poort waarop Clock aangesloten wordt.
 
 \end{itemize}
-
+In de code zal de naam die ook gebruikt wordt in het tijdschema gebruikt worden, hierdoor is de code beter leesbaar. Er staat bijveerbeeld Load in plaats van GPIO16. \\
+\clearpage
 Hieronder wordt een lijst gegeven van alle $\boldsymbol{Ingangen}$ die gebruikt gaan worden:
 \begin{itemize}
 		\item GPIO12\\
@@ -47,7 +48,22 @@ Hieronder wordt een lijst gegeven van alle $\boldsymbol{Ingangen}$ die gebruikt 
 		\item Onboardclock\\
 		Dit is de eerdergenoemde interne clock, deze is geklokt op $\SI{50}{\mega\hertz} $. 
 \end{itemize}
-
+In de code zal de naam die ook gebruikt wordt in het tijdschema gebruikt worden, hierdoor is de code beter leesbaar. Er staat bijveerbeeld DataOut in plaats van GPIO12. \\
 
 \section{Uitlezen van het Schuifregister}
+Omdat er in totaal twee bytes tegelijk ingelezen kunnen worden met behulp van het schuifregister wordt er een Switch gebruikt om aan te geven welke Byte er uitgelezen moet worden. Hier wordt constant op gecontroleerd bij het uitlezen van de gegevens, deze Zwitch is al genoemd bij de lijst met ingangen.\\\\
 
+Het uitlezen van de registers is een constante herhaling van bijna dezelfde handelingen, deze handelingen bestaan uit het volgende:
+\begin{enumerate}
+	\item Zet een logische 1 op de Clock.
+	\item Zet een logische 0 op de Clock. 
+	\item Controleer bij de eerste byte of de Switch een logisch 0 is en bij de tweede byte of de Switch logisch 1 is.
+	\item Is dit waar dan kan de bijbehorende LED gelijk gesteld worden aan DataOut.
+	Zo niet dan gebeurt er niets.
+\end{enumerate}
+Hierbij vind nummer één zich plaats op tijd is x en nummer 2 tot en met 4 vinden zich plaats op tijd is x + 1.\\
+
+Er is voor gekozen om dit in een Switch Case opstelling te plaatsen, hierbij wordt het bitpatroon van een variable vergeleken om te achterhalen welke opdracht er uitgevoert moet worden. Dit levert een code op die korter is dan met het gebruik van If statements.\\
+
+
+\\Omdat dit een constante herhaling is van bijna dezelfde handelingen 

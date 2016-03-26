@@ -13,20 +13,35 @@ Voor de Analyse zijn er meerdere deelvragen opgesteld,
 \end{enumerate}
 
 \subsection{Hoe werkt het s88 protocol?}
-Het s88 wordt uitgelegd met behulp van onderstaande afbeelding.
+Het s88 wordt uitgelegd met behulp van de twee onderstaande afbeeldingen.
 \\\\
-Hierin is CENTRALE het in dit project gebruikte XILINX bord. 
+Het Xilinx bord kan met behulp van het s88 protocol de rechter bus uitlezen. Dit gebeurt met behulp van een schuifregister.
 \\\\
-Een centrale, die hier CENTRALE heet, kan met behulp van het s88 protocol de rechter bus uitlezen. Dit gebeurt met behulp van een schuifregister.
+Met de DATA OUT poort van het Xilinx bord wordt data ingelezen. Deze is verbonden met de Q1 Out poort van het schuifregister, hiermee wordt dus informatie van het schuifregister naar het Xilinx bord overgedragen.
 \\\\
-Met de DATA OUT poort van de CENTRALE BUS wordt data ingelezen. Deze is verbonden met de Q1 out poort van het schuifregister, hiermee wordt dus informatie van het schuifregister naar de CENTRALE overgedragen.
-\\\\
-De werking is als volgt, op het moment dat de CENTRALE een positieve flank geeft op de CLOCK en de LATCH hoog is, dan zal het schuifregister de data op Ingang D inlezen. Geeft de CENTRALE een positieve flank en is de LATCH Laag, dan zal het schuifregister één positie opschuiven.
-\\\\
-Door een puls op RESET te geven worden de buffers gereset en zijn deze weer gereed voor het ontvangen van nieuwe data. 
+Er wordt in dit onderzoek met twee termen gewerkt waarmee hetzelfde bedoelt wordt, dat zijn LATCH en Load, in de onderstaande afbeelding wordt de term LATCH gebruikt maar in het verslag wordt de term Load gebruikt.\\\\
 
 
-\includegraphics[width=400px]{./img/S88Bus.png}
+De werking is als volgt, op het moment dat het Xilinx bord een positieve flank geeft op de CLOCK en de Load hoog is, dan zal het schuifregister de data op Ingang D inlezen. Geeft het Xilinx een positieve flank en is de LATCH Laag, dan zal het schuifregister één positie opschuiven. En kan dus dus de volgende bit uitgelezen worden.\\
+Hoe de S88 bus de parralelle input omzet naar seriele output is voor dit onderzoek niet van belang en valt buiten de scope van dit verslag.	
+\\ 
+\\
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{./img/S88Timing.png}
+		\caption{Tijdschema van het S88 protocol.}
+		\label{figlabel}
+	\end{center}
+\end{figure}
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{./img/S88Bus.png}
+		\caption{Schematische tekening van het S88 protocol.}
+		\label{figlabel}
+	\end{center}
+\end{figure}
+
+
 %http://users.telenet.be/RedDeBist/MBAAN/S88%20terugmelder.htm#S88 bus:
 @online{ID,\\
 	title = {S88 TERUGMELDERS},\\
@@ -34,6 +49,8 @@ Door een puls op RESET te geven worden de buffers gereset en zijn deze weer gere
 	url = \url{http://users.telenet.be/RedDeBist/MBAAN/S88\%20terugmelder.htm}
 		
 	}
+	
+De rechter S88 bus zet paralelle data om naar seriele data, hoe dit gebeurt valt buiten de scope van dit onderzoek. Er wordt hier alleen onderzocht hoe een Xilinx bord met dit protocol kan communiceren.
 \clearpage
 	
 \subsection{Hoe wordt het XILINX Spartan 3E FPGA bord gebruikt?}
