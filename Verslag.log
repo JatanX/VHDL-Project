@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.24)  26 MAR 2016 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.24)  26 MAR 2016 23:42
 entering extended mode
 **./Verslag.tex
 (Verslag.tex
@@ -1286,7 +1286,25 @@ Package babel Info: Redefining dutch shorthand "~
 (babel)             in language  on input line 66.
 [23
 
-]) (pages/code.tex
+]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \\O
+        mdat dit een constante herhaling is van bijna dezelfde handelingen
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (pages/code.tex
 Package babel Info: Redefining dutch shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining dutch shorthand "~
@@ -1391,7 +1409,7 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/palatino/uplr8a.pfb>
-Output written on Verslag.pdf (31 pages, 208680 bytes).
+Output written on Verslag.pdf (31 pages, 208673 bytes).
 PDF statistics:
  538 PDF objects out of 1000 (max. 8388607)
  245 named destinations out of 1000 (max. 500000)
