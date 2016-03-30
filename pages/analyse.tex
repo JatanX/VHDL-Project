@@ -1,6 +1,6 @@
 \chapter{Analyse}
-De Hoofdvraag luid:
-\"to"
+De Hoofdvraag:
+
 In dit onderzoek gaat er onderzocht worden of het S88 protocol nagebouwd kan worden met een XILINX Spartan 3E FPGA bord en de harware omschrijf taal VHDL.
 \section{deelvragen}
 Voor de Analyse zijn er meerdere deelvragen opgesteld,
@@ -25,19 +25,19 @@ Er wordt in dit onderzoek met twee termen gewerkt waarmee hetzelfde bedoelt word
 De werking is als volgt, op het moment dat het Xilinx bord een positieve flank geeft op de CLOCK en de Load hoog is, dan zal het schuifregister de data op Ingang D inlezen. Geeft het Xilinx een positieve flank en is de LATCH Laag, dan zal het schuifregister één positie opschuiven. En kan dus dus de volgende bit uitgelezen worden.\\
 Hoe de S88 bus de parralelle input omzet naar seriele output is voor dit onderzoek niet van belang en valt buiten de scope van dit verslag.	
 \\ 
-\\
+
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{./img/S88Timing.png}
 		\caption{Tijdschema van het S88 protocol.}
-		\label{figlabel}
+
 	\end{center}
 \end{figure}
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{./img/S88Bus.png}
 		\caption{Schematische tekening van het S88 protocol.}
-		\label{figlabel}
+
 	\end{center}
 \end{figure}
 
