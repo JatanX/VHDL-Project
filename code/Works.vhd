@@ -163,5 +163,3 @@ TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and
  			end if;
  end process;
  end s88Timing;
-CODE BACKUP.txt
-CODE BACKUP.txt wordt weergegeven.
