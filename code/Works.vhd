@@ -1,7 +1,6 @@
-
 library IEEE;
-use IEEE . STD_LOGIC_1164 .ALL;
-use IEEE . NUMERIC_STD .ALL;
+use IEEE.STD_LOGIC_1164 .ALL;
+use IEEE.NUMERIC_STD .ALL;
 
 
 --library UNISIM;
@@ -34,6 +33,7 @@ and TimingCounter(19) = '0' and TimingCounter(20) = '0' and TimingCounter(21) = 
 )then
 
 					TimingCounter <= "0000000000000000000000000";
+					ClockCounter <= '0';
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 	     case TijdseenheidCounter is
 			 when "00000001" =>

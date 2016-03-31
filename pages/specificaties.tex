@@ -1,14 +1,26 @@
 \chapter{Specificaties}
 
-In de specificaties wordt omschreven welke soft- en hardware er gebruikt wordt, met daarbij de relevante karakteristieken, in dit verslag
+In de specificaties wordt omschreven welke soft- en hardware er gebruikt wordt, met daarbij de relevante karakteristieken, in dit verslag.
 
 
 \section{Hardware}
 Er wordt gebruik gemaakt van de volgende Hardware
 
 \begin{itemize}
-	\item Er wordt gebruik gemaakt van een XILINX Spartan 3E FPGA bord.
-	\item Er wordt gebruik gemaakt van een Field Programmable Gate Array (FPGA). 
+	\item Er wordt gebruik gemaakt van een XILINX Spartan 3E FPGA bord. Dit bevat: 
+	\begin{itemize}
+		\item 8 Leds voor output.
+		\item 8 switches voor input.
+		\item 4 buttons voor input.
+		\item 24 GPIO poorten om extern verbinding te leggen.
+		\item Een segmenten display voor output.
+		\item Het XILINX Spartan 3E FPGA bord moet kunnen communiceren met een Field Programmable Gate Array (FPGA).
+	\end{itemize}
+	\item Er wordt gebruik gemaakt van een RM-88-N schuifregister. wat bestaat uit: 
+	\begin{itemize}
+		\item Een data out poort.
+		\item Een data in poort.
+	\end{itemize}
 \end{itemize}
 
 \section{Software}

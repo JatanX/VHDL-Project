@@ -1,4 +1,8 @@
-	\chapter*{Samenvatting}
-	In dit onderzoeks verslag wordt de werking van het s88-n protocol onderzocht.
-	Deze werking wordt geïmplementeerd met behulp van VHDL.
-	
+\chapter*{Samenvatting}
+Dit verslag gaat over een communicatie kunnen opstellen tussen een NI-FPGA bord en een RM88-N schuifregister via het S88 protocol. Dit wordt tot stand gebracht met de hardware beschrijvingstaal VHDL.\\
+Ten eerste wordt onderzocht hoe het S88 protocol werkt. Dit blijkt na extensief onderzoek een protocol te zijn om data over een lijn te sturen. Dit wordt verder gebruikt om data heen weer te sturen vanaf het NI-FPGA bord naar het schuifregister. Er wordt gecontroleerd of het werkt door een LED aan te zetten op het NI-FPGA bord.\\\\
+
+Om te kunnen communiceren is echter wel een constant signaal benodigd, het NI-FPGA bord bevat gelukkig een OnBoardClock (ingebouwde klok) waarmee het mogelijk is te controleren wanneer er een signaal wordt opgevangen.\\
+De klok werkt echter op 50Mhz terwijl het RM88-N bord slechts 1khz aankan, dus moet de klok eerst naar beneden geschaalt worden.\\\\
+
+In dit verslag wordt dus besproken wat er geprobeerd wordt te behalen en hoe dit behaald wordt. Met in diepte onderzoek naar de middelen gebruikt. Met name de hardware beschrijvings taal VHDL en het S88 timings protocol.

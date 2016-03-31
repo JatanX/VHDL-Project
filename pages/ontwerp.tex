@@ -17,17 +17,15 @@ In dit hoofdstuk zal het ontwerpen plaatsvinden, dus in woorden uitgelegd wat er
 
 Het eerste wat gedaan moet worden is de clockrate naar beneden schalen, dit wordt gedaan omdat de normale clockrate $\SI{50}{\mega\hertz} $ is.
 \\\\
-Deze clockrate is te hoog om als een LED met deze frequintie knippert met een menselijk oog te kunnen waarnemen, hierom zal de clockrate intern verlaagt moeten worden.
+Als een Led met deze frequentie zou knipperen is dat te hoog om met een menselijk oog waar te kunnen nemen, hierom zal de clockrate intern verlaagt moeten worden.
 \\\\
 Dit zal gebeuren door middel van een interne timer, die iedere clocktick met één verhoogd wordt.
 \\\\
-Op het moment dat deze timer, die vanaf dit moment ClockTimer genoemt zal worden, een waarde van ${2.5} \times {10}^4$ bereikt zal er een andere variabele genaamt CustomClock met getoggled worden.
+Op het moment dat deze timer, die vanaf dit moment TimingCounter genoemt zal worden, een waarde van ${5} \times {10}^5$ bereikt zal er een andere variabele genaamt TijdseenheidCounter met \'e\'en verhoogd worden. 
 \\\\
-Dit houdt in dat er een eigen clock wordt gegenereerd die 0.5 seconde hoog is om daarna 0.5 seconde laag te zijn. Dit betekend dat de gegeneerde clock ofwel CustomClock een clockrate van $\SI{1}{\hertz}$ heeft. 
-\\
-Dit is goed zichtbaar voor het menselijke oog.
+Er zal een Case statement gebruikt worden met als variable de TijdseenheidCounter, en hiermee zal er op elk tijdseenheid de juiste actie uitgevoerd worden.
 \clearpage
-\section{De S88 Signalen}
+	\section{De S88 Signalen}
 
 In de Analyze in de sectie "Hoe werkt een s88 protocol" is reeds uitgelegd hoe het s88 protocolr werkt. 
 \\
@@ -45,9 +43,12 @@ Het ontwerpen van deze signalen wordt opgesplitst in twee secties, De initialisa
 \section{Initialisatie van het schuifregister}
 
 
-De volgorde van deze signales wordt beschreven in onderstaande image.
+De volgorde van deze signalen wordt beschreven in onderstaande image.
+\begin{figure}
+	\includegraphics[scale=0.9]{./img/s88timing.png}
+	\caption{S88 timing}
+\end{figure}
 
-\includegraphics[scale=0.9]{./img/s88timing.png}
 
 Deze image geeft aan welke poorten wanneer op een logisch 1 gezet moeten worden. Als voorbeeld, de lijn onder Load/PS is de lijn die bij Load hoort. In het begin geeft de lijn een logisch 0 weer, de stijding betekent dat daar de poort op een logisch 1 gezet wordt.
 \\\\

@@ -61,9 +61,15 @@ Het uitlezen van de registers is een constante herhaling van bijna dezelfde hand
 	\item Is dit waar dan kan de bijbehorende LED gelijk gesteld worden aan DataOut.
 	Zo niet dan gebeurt er niets.
 \end{enumerate}
-Hierbij vind nummer één zich plaats op tijd is x en nummer 2 tot en met 4 vinden zich plaats op tijd is x + 1.\\
+Hierbij vind nummer één zich plaats op tijd is $x$ en nummer $2$ tot en met $4$ vinden zich plaats op tijd is $x + 1$.\\ 
 
-Er is voor gekozen om dit in een Switch Case opstelling te plaatsen, hierbij wordt het bitpatroon van een variable vergeleken om te achterhalen welke opdracht er uitgevoert moet worden. Dit levert een code op die korter is dan met het gebruik van If statements.\\\\
+Er is voor gekozen om dit in een Switch Case opstelling te plaatsen, hierbij wordt het bitpatroon van een variable vergeleken om te achterhalen welke opdracht er uitgevoert moet worden. Dit levert een code op die korter is dan met het gebruik van If statements.\\
 
+De enige veranderingen tussen de verschillende Case statements is:
+\begin{enumerate}
+	\item Het LED nummer
+	\item Of het Lower of Higher Byte geselecteerd is
+	\item De index van de Switch
+\end{enumerate}
 
-Omdat dit een constante herhaling is van bijna dezelfde handelingen 
+%Hierom is er voor gekozen om dit niet zelf te typen, er is voor gekozen om dit met een Python script te genereren, zie 
