@@ -26,10 +26,7 @@ architecture s88Timing of s88 is
 			if(rising_edge(OnboardClock)) then
 				ClockCounter := ClockCounter + 1;
 				TimingCounter <= ClockCounter;
-				if(
-TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and TimingCounter(3) = '0' and TimingCounter(4) = '0' and TimingCounter(5) = '1' and TimingCounter(6) = '0' and TimingCounter(7) = '0' and TimingCounter(8) = '1' and TimingCounter(9) = '0'
-and TimingCounter(10) = '0' and TimingCounter(11) = '0' and TimingCounter(12) = '0' and TimingCounter(13) = '1' and TimingCounter(14) = '0' and TimingCounter(15) = '1' and TimingCounter(16) = '1' and TimingCounter(17) = '1' and TimingCounter(18) = '1'
-and TimingCounter(19) = '0' and TimingCounter(20) = '0' and TimingCounter(21) = '0' and TimingCounter(22) = '0' and TimingCounter(23) = '0' and TimingCounter(24) = '0'
+				if(TimingCounter(0) = '0' and TimingCounter(1) = '0' and TimingCounter(2) = '0' and TimingCounter(3) = '0' and TimingCounter(4) = '1' and TimingCounter(5) = '0' and TimingCounter(6) = '1' and TimingCounter(7) = '0' and TimingCounter(8) = '1' and TimingCounter(9) = '1' and TimingCounter(10) = '0' and TimingCounter(11) = '0' and TimingCounter(12) = '0' and TimingCounter(13) = '0' and TimingCounter(14) = '1' and TimingCounter(15) = '1' and TimingCounter(16) = '0' and TimingCounter(17) = '0' and TimingCounter(18) = '0' and TimingCounter(19) = '0' and TimingCounter(20) = '0' and TimingCounter(21) = '0' and TimingCounter(22) = '0' and TimingCounter(23) = '0' and TimingCounter(24) = '0'
 )then
 
 					TimingCounter <= "0000000000000000000000000";
