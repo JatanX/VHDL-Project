@@ -30,7 +30,7 @@ architecture s88Timing of s88 is
 )then
 
 					TimingCounter <= "0000000000000000000000000";
-					ClockCounter <= '0';
+					ClockCounter := (others => '0');
 					TijdseenheidCounter := TijdseenheidCounter + 1;
 	     case TijdseenheidCounter is
 			 when "00000001" =>
@@ -152,7 +152,7 @@ architecture s88Timing of s88 is
 			 Clock <= '0';
 			 if(HighBit = '1') then
 			 LED7 <= DataOut;
-			 TijdseenheidCounter := 0;
+			 TijdseenheidCounter := (others => '0');
 			 end if;
 
 			 when others =>
